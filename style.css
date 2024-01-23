@@ -2,6 +2,11 @@ body {
   font-family: 'Figtree', sans-serif;
 }
 
+header {
+  box-shadow: inset 0 -6px 2px -5px rgba(0 0 0/0.1);
+}
+
+
 .searchbar {
   display: grid;
   grid-template-columns: 1fr min-content;
@@ -60,4 +65,49 @@ body {
   border-color: rgb(176, 176, 176);
   justify-content: center;
   background-color: rgb(255, 255, 255);
+}
+
+.propertyTypeBar {
+  display: grid;
+  height: 74px;
+  overflow-x: auto;
+  touch-action: manipulation;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  column-gap: 16px;
+  padding-inline-end: 24px;
+  padding-inline-start: 24px;
+}
+
+.propertyContainer {
+  display: flex;
+  width: 64;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: rgb(34, 34, 34);
+}
+
+
+.propertyDisplay {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.propertyIcon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+.propertyText {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  white-space: nowrap;
+
 }
