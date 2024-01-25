@@ -108,6 +108,81 @@ header {
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  white-space: nowrap;
+  white-space: nowrap
+}
 
+.cardImage {
+  display: grid;
+  grid-template-areas:
+    "top top"
+    "bottom bottom";
+  /* Define two grid areas: header and footer */
+  background-image: url("assets/image1.jpg");
+  background-size: cover;
+  /* Ensure image covers the entire container */
+  width: 382px;
+  height: 362.891px;
+  border-radius: 10px;
+}
+
+.guestFave {
+  grid-area: top;
+  /* Place h1 in the header area */
+  align-self: start;
+  /* Align to the top */
+  justify-self: start;
+  /* Align to the left */
+  background-color: white;
+  margin-left: 12px;
+  margin-top: 12px;
+  border-radius: 1000px;
+}
+
+.guestFaveTxt {
+  padding: 4px 10px 4px 10px;
+  font-size: 14px;
+}
+
+.heart {
+  grid-area: top;
+  /* Place h2 in the header area as well */
+  align-self: start;
+  /* Align to the top */
+  justify-self: end;
+  /* Align to the right */
+  color: white;
+  padding-top: 12px;
+  padding-right: 12px;
+}
+
+.carousel {
+  grid-area: bottom;
+  /* Place p in the footer area */
+  align-self: end;
+  /* Align to the bottom */
+  justify-self: center;
+  /* Center horizontally */
+  color: white;
+  /* Adjust text color for readability */
+  font-size: 50px;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 12px;
+}
+
+.heart svg {
+  stroke: white;
+  fill: rgba(0, 0, 0, 0.5);
+  stroke-width: 2px;
+  height: 24px;
+  width: 24px;
+}
+
+.carouselDots {
+  width: 6px;
+  height: 6px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  border-radius: 50%;
+  background-color: white;
 }
