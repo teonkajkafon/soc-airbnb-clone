@@ -240,3 +240,10 @@ header {
 .price span:first-child {
   font-weight: 600;
 }
+
+.section3Text {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 65px;
+  text-align: center;
+}
