@@ -12,6 +12,10 @@ main {
   margin-bottom: 32px;
 }
 
+h2 {
+  font-weight: 500;
+}
+
 
 .searchbar {
   display: grid;
@@ -48,7 +52,6 @@ main {
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
-
 }
 
 #searchdetails {
@@ -118,7 +121,6 @@ main {
 
 .section2 {
   margin-top: 24px;
-
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -271,4 +273,66 @@ main {
   background-color: rgb(34, 34, 34);
   border-radius: 8px;
   border-style: none;
+}
+
+.ftr1 {
+  padding: 48px 24px 48px 24px;
+  background-color: rgb(247, 247, 247);
+}
+
+.ftr1 h2 {
+  margin-bottom: 8px;
+}
+
+.ftr1 button {
+  font-family: 'Figtree', sans-serif;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  color: rgb(34, 34, 34);
+  font-size: 14px;
+}
+
+.ftr1TypeBar {
+  display: flex;
+  overflow-x: auto;
+  touch-action: manipulation;
+}
+
+.ftr1TypeBar button {
+  font-weight: 500;
+  padding: 10px;
+  margin: 6px 6px 6px 0px;
+  white-space: nowrap;
+}
+
+.ftr1TypeBar button:first-child {
+  margin: 6px 6px 6px -10px;
+}
+
+.ftr1 ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  list-style: none;
+  list-style-type: none;
+  row-gap: 24px;
+  font-size: 14px;
+  padding: 32px 0 0 0;
+  margin: 0;
+}
+
+li a {
+  display: flex;
+  flex-direction: column;
+}
+
+.ftr1 li a span:nth-child(2) {
+  font-weight: 300;
+  color: rgb(113, 113, 113);
+}
+
+li button {
+  display: flex;
+  column-gap: 4px;
+  padding: 0px;
 }
