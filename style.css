@@ -1,7 +1,12 @@
 body {
   font-family: 'Figtree', sans-serif;
   color: rgb(34, 34, 34);
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex-basis: 430px;
 }
 
 header {
